@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Purchasing {
-// HashMap is used for Different datatypes  stores and access in a Single varaible
+// Using the HashMap is two  Different datatypes  stores and access in a Single varaible
     public HashMap<String, Double> purchase = new HashMap<String, Double>();
    
 
