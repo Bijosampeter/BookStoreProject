@@ -1,68 +1,37 @@
-import java.util.HashMap;
-
-public class Purchasing {
-// HashMap is used for Different datatypes  stores and access in a Single varaible
-    public HashMap<String, Double> purchase = new HashMap<String, Double>();
+public class Admin {
    
-
-    public void purchasetheBook(String BookName, double BookPrice ) {
-        purchase.put(BookName, BookPrice);
-      
-        System.out.println("Product bought: " + BookName);
+	public String getName() {
+        return AdminName;
     }
 
-    public void canceltheBook(String BookName) {
+    public void setName(String AdminName) {
     	
-        if (purchase.containsKey(BookName)) {
- //HashMap <containsKey> is used to check the argument(prodeuctName)is in the Map or Not
-            purchase.remove(BookName);
- //HashMap<remove> Remove the key from the Map            
-            System.out.println("Book canceled: " + BookName);
-        } else {
-            System.out.println("Book not found");
-        }
-        
+        this.AdminName = AdminName;
     }
-    public void Bill(String BookName,double BookPrice) {
-    	if(purchase.containsKey(BookName)){
-    		System.out.println("Book Name : "+BookName);
-    		
-    	}
-    	else {
-    		System.out.println("Invalid error");
-    	}
-     	if(purchase.containsValue(BookPrice)) {
-    		System.out.println("BookPrice : "+BookPrice);
-    	}
-    	else {
-    		System.out.println("errror in priceList");
-    	}
+
+    public int getPassword() {
+        return AdminPass;
+    }
+
+    public void setPassword(int AdminPass) {
     	
-    	if(BookPrice>0) {
-    		double Gst=13.637;
-    		double TotalAmount=BookPrice+Gst;
-    		System.out.println("Total Amount : "+TotalAmount + " Gst is Included");    		
-    		
-    	}
-    	else {
-    		System.out.println("Invalid Purchase");
-    	}
-    	if(BookPrice>500) {
-    		System.out.println("You Got Special Redemed code -- RBSP102004 and use this redeemed code to get 15 to 20 percentage discount for next Purchase");
-    	}
-    	else {
-    		 System.out.println("--------------Thank you for Visiting us-------------");
-    		
-    	}
-    	 System.out.println("--------------Thank you for Visiting us-------------");
+        this.AdminPass = AdminPass;
     }
+
+    public Admin(String AdminName, int AdminPass) {
     
+        this.AdminName = AdminName;
+        this.AdminPass = AdminPass;
+    }
 
-	
-	}
+    private String AdminName;
+    private int AdminPass;
 
-	
-
-	
-
-    
+  
+    public String toString() {
+    	  return "Customer{" +
+                  "name='" + AdminName + '\'' +
+                  ", password=" + AdminPass +
+                  '}';
+      }
+    }
