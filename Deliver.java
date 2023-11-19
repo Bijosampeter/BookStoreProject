@@ -105,16 +105,14 @@ public class Deliver {
 
         }
                 static void Bill() {
-                	int loginUser=0;
-                	if(loginUser==0) {
+                    int loginUser=0;
+                    if(loginUser==0){
                     System.out.print("Enter Book name: ");
                     String BookName = sc.next();
-                    System.out.println(" ");
                     System.out.print("Enter Book price: ");
                     double BookPrice = sc.nextDouble();
-                	
-                	pur.Bill(BookName,BookPrice);
-                }
+                    pur. Bill(BookName,BookPrice);     
+                           }
                 	else {
                 		 System.out.println(" Bill Cannot Be Generated ");
                        
