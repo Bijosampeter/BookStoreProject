@@ -6,4 +6,4 @@
 
 # The program which is created By An HashMap becasuse The hash map is used whenever data is stored as key-value pairs, where values can be added, retrieved, and deleted using keys. 
 
-# If it is not work in vs code pls use it in any complier like Eclipse,Springtool
+
